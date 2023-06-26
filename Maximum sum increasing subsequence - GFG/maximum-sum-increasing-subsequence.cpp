@@ -11,7 +11,7 @@ class Solution{
 	{  
 	    vector <int> dp(n,1),ans(arr,arr+n);
 	    
-        for(int i = 1;i < n;i++){
+        for(int i = 0;i < n;i++){
             for(int j = 0;j < i;j++){
                 if(arr[j] < arr[i] && dp[j] == dp[i]){
                     dp[i]++;
